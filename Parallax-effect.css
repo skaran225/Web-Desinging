@@ -1,0 +1,79 @@
+body{
+    margin: 0px;
+    
+}
+.container{
+    width: 100%;
+    z-index: 999;
+}
+.main{
+    height: 800px;
+    background-color: #fff;
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    
+}
+.main h1{
+    color: #c6c6c6;
+    font-family: "Open Sans", sans-serif;
+}
+.main p{
+    //font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: #c3c3c3;
+    
+}
+.main hr{
+    color: #fff;
+    background-color:#fff; 
+}
+.headerbox{
+    position: relative;
+    height: 470px;
+    background-image: url("images/background.jpg");
+    background-size:cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.logo{
+    height: 160px;
+    width: 100%;
+    background-image: url("images/New_Bird_Logo1.png");
+    //background-color:pink;
+    background-position:center;
+    position: absolute;
+    background-repeat: no-repeat;
+    top:170px;
+    color: #222222;
+    z-index: 1;
+    
+}
+.blur{
+        height: 150px;
+    width: 100%;
+    background-image: url("images/blur.png");
+   
+    background-position:top left;
+    position: absolute;
+    background-repeat: no-repeat;
+    top:50px;
+    z-index: 2;
+}
+.fore{
+    height: 160px;
+    width:100%;
+   background-image: url("images/blackbird-2400px.png");
+    //background-color:pink;
+    background-position:right;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top:330px;
+    z-index: 10;
+    color: #222222;
+    
+}
