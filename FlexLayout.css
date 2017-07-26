@@ -1,0 +1,128 @@
+*{
+    font-family: sans-serif;
+    font-size: 100%;
+    
+}
+body{
+    background: #e8e8e8;
+}
+.wrapper>*,.Container>*{
+    padding: 1%;
+    border-radius: 7px;
+    
+}
+.header{
+    background: #000fff;
+    color: #fff;
+    font-size:16px;
+    margin-bottom: 4px;
+}
+.Container{
+    background: #c55;
+    box-sizing: border-box;
+    display:flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    
+}
+.sidebar{
+    background: #eee;
+    flex: 0 0 150px;
+    padding: 10px;
+    
+}
+.sidebar ul{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    color: #222;
+    font-weight: bold;
+}
+.sidebar ul li a:hover{
+    color:limegreen;
+}
+.contentArea{
+    background: #e3f;
+        display:flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 4;
+    flex-basis: 300px;
+    justify-content:center;
+    -moz-justify-content:center;
+    margin-left: 4px;
+    padding: 10px;
+    
+    
+}
+article{
+    width: 98%;
+    padding: 15px;
+    border-radius: 7px;
+    background-color:coral;
+    display: block;
+    line-height: 24px;
+    box-sizing: border-box;
+   
+    
+}
+article h1{
+    color: #fff;
+}
+.footer{
+    background: #c1c1d1;
+    text-align: center;
+    margin-top: 4px;
+} 
+.box{
+    background: #fff;
+    border-radius: 7px;
+    padding: 10px;
+    flex: 1 0 30%;
+    margin-left: 10px;
+    margin-top: 10px;
+    line-height: 22px;
+    
+}
+
+
+
+
+@media screen and (max-width:720px){
+    .box{
+        flex-basis: 50%;
+       
+    }
+    .sidebar{
+         
+        flex: 0 0 97%;
+        
+        
+    }
+    .contentArea{
+        order: 1;
+    }
+    .sidebar{
+        order: 2;
+    }
+   
+   
+}
+
+
+
